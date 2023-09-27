@@ -10,6 +10,8 @@ Full text search your data using vector search
 - store in local ChromaDB the embedings and metadata in local / cloud ES
 - fine tune llama 2 16k with RoPE model to respond "I am not familiar with the subject" if the embeddings does not contain enough information
 - when doing inference, tokenize the question, do the vector search, fetch the embeddings and metadata
+- make sure first we search metadata
 - If there are not enough matchin embeddings, rephrase the question
 - Create the prompt and add the embeddings to the context and do the inference
 - If there is a response, enrich it with the metadata and return it to the user
+- 
